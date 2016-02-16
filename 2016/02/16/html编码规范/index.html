@@ -3,59 +3,103 @@
 <head>
   <meta charset="utf-8">
   
-  <title>HTML编码规范 | 国美无线前端</title>
+  <title>HTML编码规范 | gomefe</title>
   <meta name="author" content="gomefe">
-
   
   <meta name="description" content="存放规范、教程、分享、demo">
   
   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="alternate" href="/atom.xml" title="国美无线前端" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt ie 9]<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script> -->
-  <script src="http://lib.sinaapp.com/js/jquery/1.8.1/jquery.min.js"></script>
+  <meta property="og:title" content="HTML编码规范"/>
+  <meta property="og:site_name" content="gomefe"/>
+
   
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/spacelab.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
 </head>
 
+ <body>  
+  <nav id="main-nav" class="navbar  navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">gomefe</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
 
-<body>
-  <header id="header" class="inner"><nav>
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-</nav></header>
-  <div id="content" class="inner"><article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <header>
-    
-  
-    <h1 class="title">HTML编码规范</h1>
-  
+  <div class="container">
+  	<div class="content">
+    	 
 
-    <time datetime="2016-02-16T10:25:36.000Z">
-  <span class="day">16</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p><em>本文内容基于<a href="https://github.com/ecomfe/spec/blob/master/html-style-guide.md" target="_blank" rel="external">ecomfe(百度EFE团队)/html</a>规范修改得来</em></p>
+
+	
+		<div class="page-header ">		
+			<h1 class="title "> HTML编码规范</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p><em>本文内容基于<a href="https://github.com/ecomfe/spec/blob/master/html-style-guide.md" target="_blank" rel="external">ecomfe(百度EFE团队)/html</a>规范修改得来</em></p>
 <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1 前言"></a>1 前言</h2><p>本文档的目标是使HTML代码风格保持一致，并且提供一套html标签语义化指导意见，期望html页面可以很容易被理解和被维护。</p>
 <h2 id="2-代码风格"><a href="#2-代码风格" class="headerlink" title="2 代码风格"></a>2 代码风格</h2><h3 id="2-1-缩进与换行"><a href="#2-1-缩进与换行" class="headerlink" title="2.1 缩进与换行"></a>2.1 缩进与换行</h3><h4 id="强制-使用-4-个空格做为一个缩进层级，不允许使用-2-个空格-或-tab-字符。"><a href="#强制-使用-4-个空格做为一个缩进层级，不允许使用-2-个空格-或-tab-字符。" class="headerlink" title="[强制] 使用 4 个空格做为一个缩进层级，不允许使用 2 个空格 或 tab 字符。"></a>[强制] 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</h4><p>示例：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>first<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>second<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -333,38 +377,128 @@
 <h4 id="建议-当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域"><a href="#建议-当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域" class="headerlink" title="[建议]当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域"></a>[建议]当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，<span style="color:red">不要用a标签包裹触发区域</span></h4><p>示例:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line"><span class="tag">a</span><span class="class">.react</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"> inherit</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"react"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">h3</span>&gt;</span>title<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">p</span>&gt;</span>paragraph<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">section</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"react"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">span</span>&gt;</span>text<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">section</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>####[建议]在base_new.css中加入了a.react样式，其内容如下，建议当使用a标签做包裹时，使用此样式代替自定义样式</p>
 <h3 id="5-5-其他标签"><a href="#5-5-其他标签" class="headerlink" title="5.5 其他标签"></a>5.5 其他标签</h3><p>以上标签已能涵盖大部分情况，其他标签，一般情况下不建议使用。</p>
-<h2 id="6-模板中的-HTML"><a href="#6-模板中的-HTML" class="headerlink" title="6 模板中的 HTML"></a>6 模板中的 HTML</h2><h4 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h4>
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/编码规范/">编码规范</a></div>
+<h2 id="6-模板中的-HTML"><a href="#6-模板中的-HTML" class="headerlink" title="6 模板中的 HTML"></a>6 模板中的 HTML</h2><h4 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h4>	  
+	</div>
 
-      
-    </footer>
-    
-  </div>
-  
-</article></div>
-  <footer id="footer" class="inner"><div class="social alignright">
-  
-  
-  
-  
-  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/02/16/css编码规范/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/02/16/markdown语法简要说明/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
 </div>
-<p>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
   
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-02-16 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/编码规范/">编码规范<span>3</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
   &copy; 2016 gomefe
   
-</p>
-<div class="clearfix"></div></footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
-
-
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
 
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
@@ -376,11 +510,15 @@
 </script>
 
 
-<div id="phasebeam">
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-</div>
-<script src="/js/phasebeam.js"></script>
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
 </body>
-</html>
+   </html>
