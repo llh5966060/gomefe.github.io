@@ -86,8 +86,7 @@
 
 
 
-
-
+    
 <div class="row post">
 	<!-- cols -->
 	
@@ -96,11 +95,11 @@
 	
 
 	<!-- content -->
-	<div class="mypage">		
-	  		
+	<div class="mypage">
+	  
 
 	  <p><em>本文内容基于<a href="https://github.com/ecomfe/spec/blob/master/html-style-guide.md" target="_blank" rel="external">ecomfe(百度EFE团队)/html</a>规范修改得来</em></p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1 前言"></a>1 前言</h2><p>本文档的目标是使HTML代码风格保持一致，并且提供一套html标签语义化指导意见，期望html页面可以很容易被理解和被维护。</p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1 前言"></a>1 前言</h2><p>本文档的目标是使HTML代码风格保持一致，并且提供一套html标签语义化指导意见，期望html页面可以很容易被理解和被维护。</p>
 <h2 id="2-代码风格"><a href="#2-代码风格" class="headerlink" title="2 代码风格"></a>2 代码风格</h2><h3 id="2-1-缩进与换行"><a href="#2-1-缩进与换行" class="headerlink" title="2.1 缩进与换行"></a>2.1 缩进与换行</h3><h4 id="强制-使用-4-个空格做为一个缩进层级，不允许使用-2-个空格-或-tab-字符。"><a href="#强制-使用-4-个空格做为一个缩进层级，不允许使用-2-个空格-或-tab-字符。" class="headerlink" title="[强制] 使用 4 个空格做为一个缩进层级，不允许使用 2 个空格 或 tab 字符。"></a>[强制] 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</h4><p>示例：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>first<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>second<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="建议-行内标签不换行，块级元素依块内复杂度灵活判断"><a href="#建议-行内标签不换行，块级元素依块内复杂度灵活判断" class="headerlink" title="[建议] 行内标签不换行，块级元素依块内复杂度灵活判断"></a>[建议] 行内标签不换行，块级元素依块内复杂度灵活判断</h4><p>示例：</p>
@@ -377,7 +376,7 @@
 <h4 id="建议-当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域"><a href="#建议-当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域" class="headerlink" title="[建议]当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域"></a>[建议]当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，<span style="color:red">不要用a标签包裹触发区域</span></h4><p>示例:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line"><span class="tag">a</span><span class="class">.react</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"> inherit</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"react"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">h3</span>&gt;</span>title<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">p</span>&gt;</span>paragraph<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">section</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"react"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">span</span>&gt;</span>text<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">section</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>####[建议]在base_new.css中加入了a.react样式，其内容如下，建议当使用a标签做包裹时，使用此样式代替自定义样式</p>
 <h3 id="5-5-其他标签"><a href="#5-5-其他标签" class="headerlink" title="5.5 其他标签"></a>5.5 其他标签</h3><p>以上标签已能涵盖大部分情况，其他标签，一般情况下不建议使用。</p>
-<h2 id="6-模板中的-HTML"><a href="#6-模板中的-HTML" class="headerlink" title="6 模板中的 HTML"></a>6 模板中的 HTML</h2><h4 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h4>	  
+<h2 id="6-模板中的-HTML"><a href="#6-模板中的-HTML" class="headerlink" title="6 模板中的 HTML"></a>6 模板中的 HTML</h2><h4 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h4>
 	</div>
 
 	<div>
@@ -424,7 +423,7 @@
         
 
     
-	
+
 	<!-- comment -->
 	
 <section id="comment">
@@ -434,16 +433,16 @@
 </section>
 
 	</div> <!-- col-md-9/col-md-12 -->
-		
+
 	
 	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
+		<div class="col-md-3" id="post_meta">
 
 	<!-- date -->
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2016-02-16 
+	2016-02-16
 	</div>
 	
 
@@ -453,25 +452,30 @@
 	<!-- tags -->
 	
 	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
-    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
 	    
   <li><a href="/tags/编码规范/">编码规范<span>3</span></a></li>
     </ul>
 	</div>
-		
-
+	
+	
 	<!-- toc -->
 	<div class="meta-widget">
 	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#1-前言"><span class="toc-article-text">1 前言</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#2-代码风格"><span class="toc-article-text">2 代码风格</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#2-1-缩进与换行"><span class="toc-article-text">2.1 缩进与换行</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-使用-4-个空格做为一个缩进层级，不允许使用-2-个空格-或-tab-字符。"><span class="toc-article-text">[强制] 使用 4 个空格做为一个缩进层级，不允许使用 2 个空格 或 tab 字符。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-行内标签不换行，块级元素依块内复杂度灵活判断"><span class="toc-article-text">[建议] 行内标签不换行，块级元素依块内复杂度灵活判断</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-每行不得超过-120-个字符。"><span class="toc-article-text">[建议] 每行不得超过 120 个字符。</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#2-2-命名"><span class="toc-article-text">2.2 命名</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-class-必须单词全字母小写，单词间以-分隔。"><span class="toc-article-text">[强制] class 必须单词全字母小写，单词间以 _ 分隔。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-class-必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。"><span class="toc-article-text">[强制] class 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-元素-id-必须保证页面唯一。"><span class="toc-article-text">[强制] 元素 id 必须保证页面唯一。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-id-建议单词全字母小写，单词间以-分隔。同项目必须保持风格一致。"><span class="toc-article-text">[建议] id 建议单词全字母小写，单词间以 _ 分隔。同项目必须保持风格一致。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-id、class-命名，在避免冲突并描述清楚的前提下尽可能短。"><span class="toc-article-text">[建议] id、class 命名，在避免冲突并描述清楚的前提下尽可能短。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-禁止为了-hook-脚本，创建无样式信息的-class。"><span class="toc-article-text">[强制] 禁止为了 hook 脚本，创建无样式信息的 class。</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#2-3-标签"><span class="toc-article-text">2.3 标签</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-标签名必须使用小写字母。"><span class="toc-article-text">[强制] 标签名必须使用小写字母。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-对于无需自闭合的标签，不允许自闭合。"><span class="toc-article-text">[强制] 对于无需自闭合的标签，不允许自闭合。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-对-HTML5-中规定允许省略的闭合标签，不允许省略闭合标签。"><span class="toc-article-text">[强制] 对 HTML5 中规定允许省略的闭合标签，不允许省略闭合标签。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-标签使用必须符合标签嵌套规则。"><span class="toc-article-text">[强制] 标签使用必须符合标签嵌套规则。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-在-CSS-可以实现相同需求的情况下不得使用表格进行布局。"><span class="toc-article-text">[建议] 在 CSS 可以实现相同需求的情况下不得使用表格进行布局。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-标签的使用应尽量简洁，减少不必要的标签。"><span class="toc-article-text">[建议] 标签的使用应尽量简洁，减少不必要的标签。</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#2-4-属性"><span class="toc-article-text">2.4 属性</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-属性名必须使用小写字母。"><span class="toc-article-text">[强制] 属性名必须使用小写字母。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-属性值必须用双引号包围。"><span class="toc-article-text">[强制] 属性值必须用双引号包围。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-除href和onerror外，不允许直接使用事件属性"><span class="toc-article-text">[强制] 除href和onerror外，不允许直接使用事件属性</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-布尔类型的属性，建议不添加属性值。"><span class="toc-article-text">[建议] 布尔类型的属性，建议不添加属性值。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-自定义属性建议以-xxx-为前缀，推荐使用-data-。"><span class="toc-article-text">[建议] 自定义属性建议以 xxx- 为前缀，推荐使用 data-。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-标签中的属性顺序，按此规则排列，id-gt-class-gt-style-gt-checked等自有属性-gt-data-等自定义属性"><span class="toc-article-text">[建议] 标签中的属性顺序，按此规则排列，id>class>style>checked等自有属性>data-*等自定义属性</span></a></li></ol></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#3-通用"><span class="toc-article-text">3 通用</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#3-1-编码"><span class="toc-article-text">3.1 编码</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-HTML-文件使用无-BOM-的-UTF-8-编码。"><span class="toc-article-text">[建议] HTML 文件使用无 BOM 的 UTF-8 编码。</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#3-2-CSS和JavaScript引入"><span class="toc-article-text">3.2 CSS和JavaScript引入</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-引入-CSS-时必须指明-rel-quot-stylesheet-quot-。"><span class="toc-article-text">[强制] 引入 CSS 时必须指明 rel="stylesheet"。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-无特殊情况，不允许直接在页面中写script和style"><span class="toc-article-text">[建议] 无特殊情况，不允许直接在页面中写script和style</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-引入-CSS-和-JavaScript-时无须指明-type-属性。"><span class="toc-article-text">[建议] 引入 CSS 和 JavaScript 时无须指明 type 属性。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-展现定义放置于外部-CSS-中，行为定义放置于外部-JavaScript-中。"><span class="toc-article-text">[建议] 展现定义放置于外部 CSS 中，行为定义放置于外部 JavaScript 中。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-在-head-中引入页面需要的所有-CSS-资源。"><span class="toc-article-text">[建议] 在 head 中引入页面需要的所有 CSS 资源。</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-JavaScript-应当放在页面末尾，或采用异步加载。"><span class="toc-article-text">[建议] JavaScript 应当放在页面末尾，或采用异步加载。</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#3-3-图片"><span class="toc-article-text">3.3 图片</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#强制-禁止-img-的-src-取值为空。延迟加载的图片也要增加默认的-src。"><span class="toc-article-text">[强制] 禁止 img 的 src 取值为空。延迟加载的图片也要增加默认的 src。</span></a></li></ol></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#4-国美在线wap前端html语义化标签使用建议"><span class="toc-article-text">4 国美在线wap前端html语义化标签使用建议</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#4-1-布局类标签"><span class="toc-article-text">4.1 布局类标签</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#5-2-功能元素标签"><span class="toc-article-text">5.2 功能元素标签</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#5-3-文本类标签"><span class="toc-article-text">5.3 文本类标签</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#5-4-特殊标签-万能标签"><span class="toc-article-text">5.4 特殊标签/万能标签</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#建议-当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域"><span class="toc-article-text">[建议]当a标签用于跳转时，将a标签置于触发区域之下，并设置为block，不要用a标签包裹触发区域</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#5-5-其他标签"><span class="toc-article-text">5.5 其他标签</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#6-模板中的-HTML"><span class="toc-article-text">6 模板中的 HTML</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#待补充"><span class="toc-article-text">待补充</span></a></li></ol></li></ol></li></ol>
+		</div>
+	
 	</div>
-	
+
     <hr>
-	
+
 </div><!-- col-md-3 -->
 
 	</div>
-		
+	
 
 </div><!-- row -->
 
