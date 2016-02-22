@@ -388,6 +388,9 @@ h4 {
 .page .entry .row{
   padding-left: 20px;
   padding-right: 5px;
+  max-height:400px;
+  overflow:hidden;
+  margin-bottom: 20px;
 }
 
 .page .entry h2{
