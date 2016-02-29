@@ -19,17 +19,19 @@
   
 
   
+    <link rel="alternative" href="/atom.xml" title="gomefe" type="application/atom+xml">
+  
   
     <link href="/favicon.png" rel="icon">
   
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/themes/spacelab.css" media="screen" type="text/css">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   <script src="/js/jquery-2.0.3.min.js"></script>
@@ -37,103 +39,62 @@
   <!-- analytics -->
   
 
-
-
 </head>
 
- <body>  
-  <nav id="main-nav" class="navbar  navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="/">gomefe</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	<div class="content">
+	  <div class="page-header">		
+  <h1><a class="brand" href="/">gomefe</a><span class="split"></span><span class="title">tags</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2016-02-16</span></h1>
+</div>		
 
-  <div class="container">
-  	<div class="content">
-    	 
-	
-		<div class="page-header ">		
-			<h1 class="title "> tags</h1>
-		</div>		
-	
-
-
-
-
-    
 <div class="row page">
-	<!-- cols -->
-	
+  <!-- cols -->	
+  
+  
+
+  
 	<div class="col-md-12">
-	
-
-	<!-- content -->
-	<div class="mypage">
 	  
 
-	  
-	</div>
+	  <!-- content -->
+	  	  
 
-	<div>
-  	<center>
-	<div class="pagination">
+	  <div>
+  		<center>
+		  <div class="pagination">
 <ul class="pagination">
-	 
+	
+	
+	
+	
+	
+	
+		<li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
+	
+	<li><a href="/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next disabled"><a>next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
 </ul>
 </div>
 
-    </center>
-	</div>
-
-    <!-- share -->
-    
-
-	<!-- comment -->
-	
+		</center>
+	  </div>
+	  
 	</div> <!-- col-md-9/col-md-12 -->
-
 	
-
-</div><!-- row -->
-
-
+  </div><!-- row -->
 
 	</div>
   </div>
   <div class="container-narrow">
-  <footer> <p>
+	<footer> <p>
   &copy; 2016 gomefe
   
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-wixo/">Wixo</a>.    
 </p> </footer>
-</div> <!-- container-narrow -->
-  
-
-
+  </div> <!-- container-narrow -->
   
 <a id="gotop" href="#">   
   <span>▲</span> 
@@ -142,8 +103,11 @@
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
 <script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
+
+
 
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
@@ -155,15 +119,5 @@
 </script>
 
 
-
-   <script type="text/javascript">      
-     var search_path = "search.xml";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "/" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
-
 </body>
-   </html>
+</html>
